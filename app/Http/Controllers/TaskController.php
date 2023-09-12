@@ -15,7 +15,6 @@ class TaskController extends Controller
        return response()->json($data, 200);
     }
 
-
     /**
      * Store a newly created resource in storage.
      */
@@ -46,8 +45,6 @@ class TaskController extends Controller
         $getdata=DB::table('task')->where('id',$id)->get();
         return response()->json($getdata, 200);
     }
-
-
 
     /**
      * Update the specified resource in storage.
